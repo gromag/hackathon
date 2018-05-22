@@ -1,0 +1,31 @@
+Hackathon Resources:
+
+*Quickstart Templates (examples)*
+https://github.com/Azure/azure-quickstart-templates
+
+*Reference documentation*
+https://docs.microsoft.com/en-us/azure/templates/
+
+*Resource Portal*
+resources.azure.com
+
+Two vms - win and linux
+One vnet with two subnets, one called windows one called linux
+-Place the Windows on the Windows subnet and the Linux on the Linux subnet
+One storage account to host the vhds
+Public ip only on the windows vm
+Two (2) disks on windows (unmanaged)
+Four (4) disks on linux (unmanaged)
+NSG rule to only allow rdp access to windows machine from anywhere (applied to the windows subnet)
+
+*Bonus*
+Have the parameter for the Virtual Machine name add Win or Lin to the end of the hostname.
+Ex. MYHOSTWIN | MYHOSTLIN
+
+*Bonus*
+Ensure that the DNS name for the public IP object to automatically be lowercase regardless of what a user enters as a parameter.
+
+*Bonus*
+Ensure the storage account has server side storage enabled.
+Ensure that the storage account automatically users lowercase and has a unique suffix to the storage account name.
+Ex. mystoracc19wisj2
