@@ -6,6 +6,8 @@ https://github.com/Azure/azure-quickstart-templates
 *Reference documentation*
 https://docs.microsoft.com/en-us/azure/templates/
 
+https://github.com/henrytruongswo/hackathon/
+
 *Resource Portal*
 resources.azure.com
 
