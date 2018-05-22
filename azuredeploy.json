@@ -288,37 +288,7 @@
         }
       },
       "resources": [
-        {
-          "name": "Microsoft.Powershell.DSC",
-          "type": "extensions",
-          "location": "[parameters('location')]",
-          "apiVersion": "2016-03-30",
-          "dependsOn": [
-            "[resourceId('Microsoft.Compute/virtualMachines', variables('vmName'))]"
-          ],
-          "tags": {
-            "displayName": "myextension"
-          },
-          "properties": {
-            "publisher": "Microsoft.Powershell",
-            "type": "DSC",
-            "typeHandlerVersion": "2.9",
-            "autoUpgradeMinorVersion": true,
-            "settings": {
-              "configuration": {
-                "url": "https://aosource000ukst.blob.core.windows.net/postbuild/WindowsVMDSC.ps1",
-                "script": "WindowsVMDSC.ps1",
-                "function": "Main"
-              },
-              "configurationArguments": {
-                "nodeName": "[variables('vmName')]"
-              }
-            },
-            "protectedSettings": {
-              "configurationUrlSasToken": ""
-            }
-          }
-        }
+        
       ]
     },
     {
